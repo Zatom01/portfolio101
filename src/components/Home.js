@@ -17,6 +17,7 @@ import '../App.css'
 import HeroSection from './HeroSection'
 
 export const Home = () => {
+    document.getElementsByTagName("video")[0].playbackRate = 0.5
     return (
         <>
             <HeroSection />
