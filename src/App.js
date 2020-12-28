@@ -16,6 +16,12 @@ function App() {
           window.location.replace("https://docs.google.com/document/d/1gqNkd1lzcGV0BBAbKde0F4NNN579jn897dpVBPXyJSQ/edit?usp=sharing");
           return null;
         }} />
+
+        <Route path='/blog' component ={()=>{
+          window.location.replace("https://zatom01.github.io/");
+          return null;
+        }} />
+
       </Switch>
     </Router>
 
