@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {Home} from './components/Home'
+import Contact from './components/Contact';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           window.location.replace("https://zatom01.github.io/");
           return null;
         }} />
+
+        <Route path='/contact' exact component={Contact} />
 
       </Switch>
     </Router>
