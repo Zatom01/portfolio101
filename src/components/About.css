@@ -5,3 +5,9 @@ img {
   position: fixed;
   z-index: -1;
 }
+
+.about__container > h1 {
+  color: white;
+  font-size: 40;
+  margin-top: -40;
+}

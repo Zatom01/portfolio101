@@ -7,6 +7,24 @@ h1 {
   text-align: center;
 }
 
+.contact__container > h1 {
+  color: white;
+  font-size: 40;
+  margin-top: -40;
+}
+
+#textboxid {
+  height: 25px;
+  width: 400px;
+  font-size: 9pt;
+}
+
+#textboxidmsg {
+  height: 200px;
+  width: 400px;
+  font-size: 9pt;
+}
+
 .contact__container {
   display: flex;
   flex-flow: column;
