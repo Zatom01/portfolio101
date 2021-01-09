@@ -47,7 +47,7 @@ export class Contact extends Component {
                         <div>
                             <label htmlFor="message"></label>
                             {/* <input type="textarea" name="message" id="textboxidmsg" class="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} /> */}
-                            <textarea id="textboxidmsg" placeholder="Message" value={this.state.message} onChange={this.handleChange}></textarea>
+                            <textarea id="textboxidmsg" value={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea>
                         </div><br />
 
                         <br />
