@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import './Contact.css'
+import * as emailjs from 'emailjs-com';
 
 export class Contact extends Component {
     state = {
@@ -12,6 +13,21 @@ export class Contact extends Component {
     handleSubmit = event => {
         event.preventDefault()
         if(this.state.name !== " " && this.state.email !== " " && this.state.message !== " "){
+            const {name, email, message} = this.state;
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                to_name: "anilgurung641",
+                message_html: message,
+            }
+
+            emailjs.sendForm(
+                'gmail',
+                'template_hz29fkt',
+                 templateParams,
+                'user_FlE7VMl4w59OFJhjVgj8L'
+               )
+
             this.setState({
                 name: "",
                 email: "",
