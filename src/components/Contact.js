@@ -13,21 +13,14 @@ export class Contact extends Component {
     handleSubmit = event => {
         event.preventDefault()
         if(this.state.name !== " " && this.state.email !== " " && this.state.message !== " "){
-            const {name, email, message} = this.state;
-            const templateParams = {
-                from_name: name,
-                from_email: email,
-                to_name: "anilgurung641",
-                message_html: message,
-            }
 
-            emailjs.sendForm(
-                'gmail',
-                'template_hz29fkt',
-                 templateParams,
-                'user_FlE7VMl4w59OFJhjVgj8L'
-               )
 
+            emailjs.sendForm('gmail', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+            });
             this.setState({
                 name: "",
                 email: "",
@@ -63,7 +56,7 @@ export class Contact extends Component {
                         <div>
                             <label htmlFor="message"></label>
                             {/* <input type="textarea" name="message" id="textboxidmsg" class="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} /> */}
-                            <textarea id="textboxidmsg" value={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea>
+                            <textarea id="textboxidmsg" defaultValue={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea>
                         </div><br />
 
                         <br />
