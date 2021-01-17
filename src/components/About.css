@@ -4,10 +4,24 @@ img {
   height: 100%;
   position: fixed;
   z-index: -1;
+  opacity: 0.3;
 }
 
 .about__container > h1 {
-  color: white;
+  color: goldenrod;
   font-size: 40;
   margin-top: -40;
+}
+
+.about__container .flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
 }
