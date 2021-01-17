@@ -20,14 +20,11 @@ function App() {
           return null;
         }} />
 
-
-
-
-
         <Route path='/blog' component ={()=>{
           window.location.replace("https://zatom01.github.io/");
           return null;
         }} />
+
         <Route path='/about' exact component={About} />
 
         <Route path='/contact' exact component={Contact} />
