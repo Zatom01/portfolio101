@@ -31,6 +31,11 @@ video {
   margin: 6px;
 }
 
+.hero-btns > :link > h1 {
+  font-size: xx-large;
+  color: white;
+}
+
 @media screen and (max-width: 960px) {
   .hero-container > h1 {
     font-size: 50px;
@@ -44,4 +49,22 @@ video {
   .btn {
     width: 100%;
   }
+}
+
+.hero-container .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+  text-align: center;
 }

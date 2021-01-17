@@ -23,6 +23,21 @@ function HeroSection() {
                 <Link to="/resume"><h1>Projects</h1></Link>
             </div>
 
+            <div class="flex-container">
+
+                <div class="flex-child magenta">
+                    Location : Lake Tahoe, California
+                </div>
+
+                <div class="flex-child green">
+                Beautiful sunset view
+
+                </div>
+
+            </div>
+
+
+
 
         </div>
     )
