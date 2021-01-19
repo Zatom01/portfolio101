@@ -23,7 +23,7 @@ function HeroSection() {
                 <Link to="/resume"><h1>Projects</h1></Link>
             </div>
 
-            <div class="flex-container">
+            {/* <div class="flex-container">
 
                 <div class="flex-child magenta">
                     Location : Lake Tahoe, California
@@ -34,7 +34,7 @@ function HeroSection() {
 
                 </div>
 
-            </div>
+            </div> */}
 
 
 
