@@ -12,8 +12,9 @@ export class Contact extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
-
+        debugger
         if(this.state.name !== "" && this.state.email !== "" && this.state.message !== "" ){
+
             emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
 
             .then((result) => {
@@ -60,8 +61,7 @@ export class Contact extends Component {
 
                         <div>
                             <label htmlFor="message"></label>
-                            <input type="textarea" name="message" id="textboxidmsg" class="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} />
-                            {/* <textarea id="textboxidmsg" defaultValue={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea> */}
+                            <textarea id="textboxidmsg" name="message" value={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea>
                         </div><br />
 
                         <br />
