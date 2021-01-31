@@ -18,13 +18,13 @@ function About() {
 
                 </div>
 
-                <div class="flex-child red">
+                <div id="x-2">
                     Mentor at WeAllCode.
-                    <br />
+
                     We All Code exists because we believe every kid deserves to excel in one of the emerging fields of STEM, whether they choose to pursue more education or go straight into careers in computer science. Our mission is to inspire, support, and teach these skills to help them be successful.
                 </div>
 
-                <div class="flex-child lime">
+                <div id="x-3">
                     Backend JavaScript Engineer at FighPandemics.
                     <br />
                     FightPandemics is an altruistic platform created in the wake of COVID-19 that connects people and organizations in need of help with those that can provide it. In fostering these vital connections, we empower communities to respond more quickly and effectively to the crisis. Our vision is to create a world where humans are more resilient to emergencies.

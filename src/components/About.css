@@ -24,9 +24,23 @@ img {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  border: 2px solid white;
 }
 
 .flex-child:first-child {
   margin-right: 20px;
   text-align: center;
+  border: 2px solid white;
+}
+
+#x-2 {
+  flex: 1;
+  margin-bottom: 5px;
+  border: 2px solid white;
+}
+
+#x-3 {
+  flex: 1;
+  margin-bottom: 5px;
+  border: 2px solid white;
 }
