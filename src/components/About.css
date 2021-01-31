@@ -20,27 +20,35 @@ img {
 
 .flex-child {
   flex: 1;
-  border: 2px solid yellow;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 2px solid white;
+  margin-right: 20px;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   border: 2px solid white;
 }
 
-.flex-child:first-child {
-  margin-right: 20px;
-  text-align: center;
-  border: 2px solid white;
-}
-
 #x-2 {
   flex: 1;
+  margin-right: 20px;
   margin-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   border: 2px solid white;
 }
 
 #x-3 {
   flex: 1;
+  margin-right: 20px;
   margin-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   border: 2px solid white;
 }
