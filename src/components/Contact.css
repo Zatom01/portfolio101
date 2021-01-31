@@ -19,6 +19,16 @@ h1 {
   font-size: 9pt;
 }
 
+h3 {
+  color: red;
+  font-size: 15pt;
+}
+
+h4 {
+  color: green;
+  font-size: 15pt;
+}
+
 #textboxidmsg {
   width: 400px;
   height: 200px;

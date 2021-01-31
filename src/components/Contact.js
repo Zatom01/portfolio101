@@ -7,13 +7,15 @@ export class Contact extends Component {
     state = {
         name: "",
         email: "",
-        message: ""
+        message: "",
+        errorMsg: "",
+        msgSent: ""
     }
 
     handleSubmit = event => {
         event.preventDefault()
-        debugger
-        if(this.state.name !== "" && this.state.email !== "" && this.state.message !== "" ){
+
+        if((this.state.name != "") && (this.state.email != "") && (this.state.message != "") ){
 
             emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
 
@@ -26,11 +28,22 @@ export class Contact extends Component {
             this.setState({
                 name: "",
                 email: "",
-                message: ""
+                message: "",
+                errorMsg: "",
+                msgSent: "Message successfully sent!"
             })
 
         }
 
+        else{
+
+            this.setState({
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message,
+                errorMsg: "All Fields Must be Filled"
+            })
+        }
 
 
     }
@@ -69,6 +82,11 @@ export class Contact extends Component {
                         <input type="submit" value="Send" class="btn btn-primary" />
 
                     </form>
+
+                    <div>
+                        <h3>{this.state.errorMsg}</h3>
+                        <h4>{this.state.msgSent}</h4>
+                    </div>
 
                 </div>
 
