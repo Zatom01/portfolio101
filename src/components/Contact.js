@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import './Contact.css'
-import * as emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 export class Contact extends Component {
     state = {
@@ -12,21 +12,21 @@ export class Contact extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
-        if(this.state.name !== " " && this.state.email !== " " && this.state.message !== " "){
 
+        emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
 
-            emailjs.sendForm('gmail', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    console.log(error.text);
-            });
-            this.setState({
-                name: "",
-                email: "",
-                message: ""
-            })
-        }
+            .then((result) => {
+                console.log(result.text);
+
+            }, (error) => {
+                console.log(error.text);
+        });
+        this.setState({
+            name: "",
+            email: "",
+            message: ""
+        })
+
     }
 
     handleChange = (event) => {
@@ -41,7 +41,7 @@ export class Contact extends Component {
                 <img src='images/img-9.jpg'/>
                 <h1>Nice to meet you ! Lets Connect </h1>
                 <div align="center">
-                    <form onSubmit={this.handleSubmit.bind(this) } >
+                    <form onSubmit={this.handleSubmit} >
                         <div>
                             <label htmlFor="name"></label>
                             <input type="text" name="name" id="textboxid" class="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} />
@@ -55,8 +55,8 @@ export class Contact extends Component {
 
                         <div>
                             <label htmlFor="message"></label>
-                            {/* <input type="textarea" name="message" id="textboxidmsg" class="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} /> */}
-                            <textarea id="textboxidmsg" defaultValue={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea>
+                            <input type="textarea" name="message" id="textboxidmsg" class="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} />
+                            {/* <textarea id="textboxidmsg" defaultValue={this.state.message} onChange={this.handleChange} placeholder="Message" ></textarea> */}
                         </div><br />
 
                         <br />
