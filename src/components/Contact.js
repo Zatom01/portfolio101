@@ -13,19 +13,24 @@ export class Contact extends Component {
     handleSubmit = event => {
         event.preventDefault()
 
-        emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
+        if(this.state.name !== "" && this.state.email !== "" && this.state.message !== "" ){
+            emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
 
             .then((result) => {
                 console.log(result.text);
 
             }, (error) => {
                 console.log(error.text);
-        });
-        this.setState({
-            name: "",
-            email: "",
-            message: ""
-        })
+            });
+            this.setState({
+                name: "",
+                email: "",
+                message: ""
+            })
+
+        }
+
+
 
     }
 
