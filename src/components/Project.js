@@ -4,7 +4,7 @@ import "./Project.css"
 function Project() {
     const [projectState, changeState] = useState({
         activeObject: null ,
-        objects: [{ id: 1}, { id: 2}, { id: 3}, { id: 4}, { id: 5} ]
+        objects: [{ id: 1, name: "CLI"}, { id: 2, name:"Sinatra"}, { id: 3, name:"Rails"}, { id: 4, name:"Javascript"}, { id: 5, name:"React" }]
     });
 
     function toggleActive(index){
@@ -30,7 +30,9 @@ function Project() {
             <h1>This page is still developing!</h1>
             <img src="images/img-project.jpeg"/>
             {projectState.objects.map((elements,index) => (
-                <div key={index} className ={toggleActiveStyles(index)} onClick ={()=> {toggleActive(index)}}></div>
+                <div key={index} className ={toggleActiveStyles(index)} onClick ={()=> {toggleActive(index)}}>
+                    <h2>{elements.name}</h2>
+                </div>
             )
             )}
 
