@@ -20,7 +20,7 @@ function HeroSection() {
                 <Link className="link-font" to="/about" ><h1>About</h1></Link>
 
                 <br></br>
-                <Link className="link-font" to="/resume" ><h1>Projects</h1></Link>
+                <Link className="link-font" to="/project" ><h1>Projects</h1></Link>
             </div>
 
             {/* <div class="flex-container">
