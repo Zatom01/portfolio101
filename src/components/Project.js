@@ -27,6 +27,7 @@ function Project() {
 
     return (
         <div classsName= "project__container">
+            <h1>This page is still developing!</h1>
             <img src="images/img-project.jpeg"/>
             {projectState.objects.map((elements,index) => (
                 <div key={index} className ={toggleActiveStyles(index)} onClick ={()=> {toggleActive(index)}}></div>
