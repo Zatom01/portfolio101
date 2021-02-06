@@ -15,11 +15,21 @@ function Project() {
         changeState({...projectState,activeObject: projectState.objects[index]})
     }
 
+    function toggleActiveStyles(index){
+        if(projectState.objects[index] === projectState.activeObject){
+            return "box active";
+        }
+        else{
+            return "box inactive"
+        }
+    }
+
+
     return (
         <div classsName= "project__container">
             <img src="images/img-project.jpeg"/>
             {projectState.objects.map((elements,index) => (
-                <div key={index} className ="box inactive" onClick ={()=> {toggleActive(index)}}></div>
+                <div key={index} className ={toggleActiveStyles(index)} onClick ={()=> {toggleActive(index)}}></div>
             )
             )}
 
