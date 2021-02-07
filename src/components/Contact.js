@@ -15,7 +15,7 @@ export class Contact extends Component {
     handleSubmit = event => {
         event.preventDefault()
 
-        if((this.state.name != "") && (this.state.email != "") && (this.state.message != "") ){
+        if((this.state.name !== "") && (this.state.email !== "") && (this.state.message !== "") ){
 
             emailjs.sendForm('service_ppf2988', 'template_hz29fkt', event.target, 'user_FlE7VMl4w59OFJhjVgj8L')
 
