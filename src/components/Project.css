@@ -17,6 +17,15 @@
   text-align: center;
 }
 
+.box img {
+  position: absolute;
+  align-content: center;
+  opacity: 100%;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+
 .inactive {
   background-color: aqua;
 }
