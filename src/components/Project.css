@@ -11,6 +11,7 @@
   height: 200px;
   margin: 10px;
   transition: background-color 0.1s ease-in-out;
+  border: 2px solid red;
 }
 .box h2 {
   color: orange;
@@ -21,9 +22,11 @@
   position: absolute;
   align-content: center;
   opacity: 100%;
-  width: 150px;
+  width: 196px;
   height: 150px;
   z-index: 1;
+  display: block;
+  margin: auto;
 }
 
 .inactive {
