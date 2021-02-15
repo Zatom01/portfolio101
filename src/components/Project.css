@@ -46,6 +46,7 @@
   position: relative;
   padding: 2px;
   margin: 70px auto;
+  overflow: auto;
 }
 .box > h2 {
   font-size: x-large;
@@ -114,5 +115,25 @@ li {
   .box-wrapper {
     height: 20vh;
     width: 100vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .description__container {
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 800px) {
+  h3,
+  h4 {
+    font-size: small;
+  }
+}
+
+@media (max-width: 800px) {
+  li {
+    line-height: 1.5em;
   }
 }
