@@ -97,3 +97,10 @@
     width: 90vw;
   }
 }
+
+@media (max-width: 355px) {
+  .box-wrapper {
+    height: 20vh;
+    width: 100vw;
+  }
+}
