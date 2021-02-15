@@ -78,3 +78,22 @@
     font-size: small;
   }
 }
+@media (max-width: 800px) {
+  .box {
+    height: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .box-wrapper {
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .box-wrapper {
+    height: 40vh;
+    width: 90vw;
+  }
+}
