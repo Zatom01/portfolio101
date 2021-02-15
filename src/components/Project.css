@@ -42,12 +42,15 @@
   position: absolute;
   z-index: 1;
 }
-.box h2 {
+.box > h2 {
+  font-size: x-large;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   color: orange;
   text-align: center;
   margin-top: 25px;
+  position: relative;
 }
 
 .box img {
@@ -68,4 +71,10 @@
 
 .active {
   background-color: lime;
+}
+
+@media (max-width: 800px) {
+  .box > h2 {
+    font-size: small;
+  }
 }
