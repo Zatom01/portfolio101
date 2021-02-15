@@ -120,7 +120,7 @@ li {
 
 @media (max-width: 1280px) {
   .description__container {
-    height: 40vh;
+    height: 60vh;
     width: 90vw;
   }
 }
