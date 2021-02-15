@@ -10,7 +10,7 @@ function About() {
             <div class="flex-container">
 
                 <div class="flex-child magenta">
-                    Hi, I am Neal living in Reno, NV. I love music, data and product engineering.
+                    Hi, I am Neal from Reno, NV. I love music, data and product engineering.
                 </div>
 
                 <div class="flex-child green">
