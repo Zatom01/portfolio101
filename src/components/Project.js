@@ -20,7 +20,6 @@ function Project() {
 
     function toggleActiveStyles(index){
         if(projectState.objects[index] === projectState.activeObject){
-
             return "box active";
         }
         else{
@@ -46,16 +45,18 @@ function Project() {
 
             </div>
             <div className="description__container">
-                    <ul>
-                        <li><h3>Project Name:</h3> <h4>{projectState.activeObject === null ? "" : projectState.activeObject.project_name}</h4> </li>
-                        <li><h3>Technology Used:</h3> <h4>{projectState.activeObject === null ? "" : projectState.activeObject.technology_used}</h4></li>
-                        <li><h3>Project Description:</h3> <h4>{projectState.activeObject === null ? "" : projectState.activeObject.description}</h4></li>
-                        <li><h3>Github:</h3> <h4>{projectState.activeObject === null ? "" : projectState.activeObject.github}</h4></li>
-                        <li><h3>Video/Demo: </h3> <h4>{projectState.activeObject === null ? "" : projectState.activeObject.video_demo}</h4></li>
+                <ul>
+                    <li><h3>Project Name:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.project_name}</h4> </li>
+                    <li><h3>Technology Used:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.technology_used}</h4></li>
+                    <li><h3>Project Description:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.description}</h4></li>
+                    <li><h3>Github:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.github}</h4></li>
+                    <li><h3>Video/Demo: </h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.video_demo}</h4></li>
 
-
-                    </ul>
+                </ul>
             </div>
+
+
+
 
 
         </div>

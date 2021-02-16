@@ -58,6 +58,12 @@
   margin-top: 25px;
   position: relative;
 }
+h4 {
+  color: green;
+}
+h3 {
+  color: rgb(120, 214, 214);
+}
 
 h3,
 h4 {
