@@ -13,6 +13,9 @@ function Navbar() {
     const openBlog =() => {
         window.open("https://zatom01.github.io/", "_blank")
     }
+    const openResume =() => {
+        window.open("https://docs.google.com/document/d/1gqNkd1lzcGV0BBAbKde0F4NNN579jn897dpVBPXyJSQ", "_blank")
+    }
 
     const showButton = () => {
 
@@ -59,13 +62,19 @@ function Navbar() {
                             Contact
                         </Link>
                     </li>
-                    <li className="nav-item">
+
+                    {/* <li className="nav-item">
                         <Link to='/resume' className="nav-links-mobile" onClick={closeMobileMenu}>
                             Resume
                         </Link>
+                    </li> */}
+
+                    <li className="nav-item">
+                        <Link className="nav-links" onClick={openResume}>Resume</Link>
                     </li>
+
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>RESUME</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>RESUME</Button>} */}
             </div>
 
 
