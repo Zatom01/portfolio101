@@ -23,6 +23,13 @@ video {
   margin-top: -100px;
 }
 
+.link-font {
+  /* display: flex; */
+  text-decoration: aquamarine;
+  padding: 0rem 8rem;
+  height: 100%;
+}
+
 .link-font > h1 {
   color: white;
 }

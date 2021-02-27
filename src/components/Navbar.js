@@ -35,7 +35,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                   NEAL<i className="fas fa-fire-alt" />
+                   NEAL&nbsp;<i className="fas fa-fire-alt" />
                </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times': 'fas fa-bars'} />
@@ -43,7 +43,7 @@ function Navbar() {
                 <ul className = {click ? 'nav-menu active': 'nav-menu'}>
                     <li className="nav-item">
                         <Link to='/about' className="nav-links" onClick={closeMobileMenu}>
-                            About<i class="fas fa-user-secret"></i>
+                            About&nbsp;<i class="fas fa-user-secret"></i>
                         </Link>
                     </li>
 
@@ -59,7 +59,7 @@ function Navbar() {
 
                     <li className="nav-item">
                         <Link to='/contact' className="nav-links" onClick={closeMobileMenu}>
-                            Contact<i class="fas fa-envelope-square"></i>
+                            Contact&nbsp;<i class="fas fa-envelope-square"></i>
                         </Link>
                     </li>
 
@@ -70,7 +70,7 @@ function Navbar() {
                     </li> */}
 
                     <li className="nav-item">
-                        <Link className="nav-links" onClick={openResume}>Resume<i class="far fa-file"></i></Link>
+                        <Link className="nav-links" onClick={openResume}>Resume&nbsp;<i class="far fa-file"></i></Link>
                     </li>
 
                 </ul>

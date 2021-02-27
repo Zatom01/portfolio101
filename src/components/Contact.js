@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './Contact.css'
 import emailjs from 'emailjs-com';
 
+
 export class Contact extends Component {
     state = {
         name: "",
@@ -58,18 +59,18 @@ export class Contact extends Component {
         return (
             <div className ="contact__container">
                 <img src='images/img-9.jpg'/>
-                <h1>Nice to meet you ! Lets Connect </h1>
+                <h1>Lets Connect </h1>
                 <div align="center">
                     <form onSubmit={this.handleSubmit} >
                         <div>
                             <label htmlFor="name"></label>
-                            <input type="text" name="name" id="textboxid" class="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} />
+                            <input type="text" name="name" id="textboxid" class="form-control" placeholder="Your Name" value={this.state.name} onChange={this.handleChange} />
                         </div> <br />
 
 
                         <div>
                             <label htmlFor="email"> </label>
-                            <input type="text" name="email" id="textboxid" class="form-control" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
+                            <input type="text" name="email" id="textboxid" class="form-control" placeholder="Your Email" value={this.state.email} onChange={this.handleChange} />
                         </div><br />
 
                         <div>

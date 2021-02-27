@@ -61,7 +61,8 @@
 .nav-links:hover {
   color: greenyellow;
   border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  height: 3.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .fa-bars {
