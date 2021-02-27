@@ -26,19 +26,18 @@ video {
 .link-font {
   /* display: flex; */
   text-decoration: aquamarine;
-  padding: 0rem 8rem;
   height: 100%;
+}
+
+.link-font:hover {
+  color: aquamarine;
+  bottom: 5rem;
 }
 
 .link-font > h1 {
   color: white;
 }
 
-.link-font:hover {
-  color: greenyellow;
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
-}
 /* .hero-btns > h1 {
   margin-top: 32px;
   color: white;
