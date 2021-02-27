@@ -10,6 +10,9 @@ function Navbar() {
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
+    const openBlog =() => {
+        window.open("https://zatom01.github.io/", "_blank")
+    }
 
     const showButton = () => {
 
@@ -41,10 +44,14 @@ function Navbar() {
                         </Link>
                     </li>
 
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link to='/blog' className="nav-links" onClick={closeMobileMenu}>
                             Blog
                         </Link>
+                    </li> */}
+
+                    <li className="nav-item">
+                        <Link className="nav-links" onClick={openBlog}>Blog</Link>
                     </li>
 
                     <li className="nav-item">
