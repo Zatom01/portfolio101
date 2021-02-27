@@ -19,7 +19,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: cyan;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -59,12 +59,13 @@
 }
 
 .nav-links:hover {
+  color: greenyellow;
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: rgb(7, 237, 245);
 }
 
 .nav-links-mobile {

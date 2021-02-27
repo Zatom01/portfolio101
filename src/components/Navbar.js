@@ -35,7 +35,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                   NEAL(Anil) <i className="fas fa-fire-alt" />
+                   NEAL<i className="fas fa-fire-alt" />
                </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times': 'fas fa-bars'} />
