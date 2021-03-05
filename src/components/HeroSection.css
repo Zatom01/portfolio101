@@ -25,12 +25,12 @@ video {
 
 .link-font {
   /* display: flex; */
-  text-decoration: aquamarine;
+  color: aqua;
   height: 100%;
 }
 
 .link-font:hover {
-  color: aquamarine;
+  color: yellowgreen;
   bottom: 5rem;
 }
 
