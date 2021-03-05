@@ -29,8 +29,11 @@ function Project() {
     }
 
     function videoLink(link){
-        return <Link onClick={()=> {window.open(link,"_blank")}}>DEMO<i class="fab fa-youtube"></i></Link>
+        return <Link className="text-link" onClick={()=> {window.open(link,"_blank")}}>DEMO<i class="fab fa-youtube"></i></Link>
+    }
 
+    function gitLink(link){
+        return <Link className="text-link" onClick={()=> {window.open(link,"_blank")}}>GITHUB<i class="fab fa-github"></i></Link>
     }
 
 
@@ -55,7 +58,7 @@ function Project() {
                     <li><h3>Project Name:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.project_name}</h4> </li>
                     <li><h3>Technology Used:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.technology_used}</h4></li>
                     <li><h3>Project Description:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.description}</h4></li>
-                    <li><h3>Github:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.github}</h4></li>
+                    <li><h3>Github:</h3> <h4>{projectState.activeObject === null ? " ": gitLink(projectState.activeObject.github)}</h4></li>
                     <li><h3>Video/Demo: </h3> <h4>{projectState.activeObject === null ? " ": videoLink(projectState.activeObject.video_demo)}</h4></li>
 
                 </ul>

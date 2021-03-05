@@ -73,6 +73,22 @@ li {
   line-height: 3em;
 }
 
+.text-link {
+  background-color: royalblue;
+  color: white;
+  padding: 0.1px 5px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.text-link:hover {
+  background-color: greenyellow;
+  color: red;
+}
+
 .box img {
   top: 17%;
   position: absolute;
