@@ -19,3 +19,14 @@
   color: white;
   text-align: center;
 }
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+  object-fit: contain;
+  flex-wrap: wrap;
+  gap: 100px;
+}

@@ -6,14 +6,14 @@ import {Home} from './components/Home'
 import Contact from './components/Contact';
 import About from './components/About';
 import Project from './components/Project'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 
 function App() {
   return (
     <>
     <Router>
       <Navbar />
-      <Footer />
+      {/* <Footer /> */}
       <Switch>
 
         <Route path ='/' exact component={Home} />
