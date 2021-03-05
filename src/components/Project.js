@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./Project.css"
+import {Link} from "react-router-dom"
 
 function Project() {
     const [projectState, changeState] = useState({
@@ -27,6 +28,11 @@ function Project() {
         }
     }
 
+    function videoLink(link){
+        return <Link onClick={()=> {window.open(link,"_blank")}}>DEMO<i class="fab fa-youtube"></i></Link>
+
+    }
+
 
     return (
         <div classsName= "project__container">
@@ -50,7 +56,7 @@ function Project() {
                     <li><h3>Technology Used:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.technology_used}</h4></li>
                     <li><h3>Project Description:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.description}</h4></li>
                     <li><h3>Github:</h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.github}</h4></li>
-                    <li><h3>Video/Demo: </h3> <h4>{projectState.activeObject === null ? " ": projectState.activeObject.video_demo}</h4></li>
+                    <li><h3>Video/Demo: </h3> <h4>{projectState.activeObject === null ? " ": videoLink(projectState.activeObject.video_demo)}</h4></li>
 
                 </ul>
             </div>
