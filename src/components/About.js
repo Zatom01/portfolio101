@@ -1,10 +1,12 @@
 import React from 'react'
 import './About.css'
+import { Link } from 'react-router-dom'
 
 function About() {
     return (
         <div className="about__container">
             <img src="images/img-home.jpg"/>
+
 
 
             <div class="flex-container">
@@ -31,6 +33,7 @@ function About() {
                 </div>
 
             </div>
+
 
 
         </div>
