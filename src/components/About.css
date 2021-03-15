@@ -52,3 +52,26 @@ img {
     "Lucida Sans", Arial, sans-serif;
   border: 2px solid white;
 }
+
+.tools__container{
+  background-color: rgba(248, 7, 112, 0.672);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  line-height: 5px;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 300px;
+  z-index: 999;
+}
+
+.item h2, h3{
+  color: antiquewhite;
+}
+
+.break {
+  flex-basis: 10%;
+  height: 0;
+}

@@ -8,7 +8,7 @@ function About() {
             <img src="images/img-home.jpg"/>
 
 
-
+            <br />
             <div class="flex-container">
 
                 <div class="flex-child magenta">
@@ -31,6 +31,26 @@ function About() {
                     <br />
                     FightPandemics is an altruistic platform created in the wake of COVID-19 that connects people and organizations in need of help with those that can provide it. In fostering these vital connections, we empower communities to respond more quickly and effectively to the crisis. Our vision is to create a world where humans are more resilient to emergencies.
                 </div> */}
+
+            </div>
+            <br />
+            <br />
+
+            <div class="tools__container">
+
+                <div class="item"><h2>COMPETENCIES</h2></div><br />
+                <div class="break"></div>
+
+                <div class="item"><h3>BACKEND:  Ruby, Java, Python, MySQL, SQLite, Postgre, NodeJS, Express, REST, MVC</h3></div><br />
+                <div class="break"></div>
+
+                <div class="item"><h3>FRONTEND: JavaScript, JSX, React, Redux, JSON, Rails, XML, HTML, CSS</h3></div><br />
+                <div class="break"></div>
+
+                <div class="item"><h3>SOFT SKILLS: Collaboration, Leadership, Organization, Design</h3></div><br />
+                <div class="break"></div>
+
+                <div class="item"><h3>OTHER: Multilingual, Github</h3></div><br />
 
             </div>
 
