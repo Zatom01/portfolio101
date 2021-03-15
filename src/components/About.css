@@ -67,8 +67,12 @@ img {
   z-index: 999;
 }
 
-.item h2, h3{
+.item h2{
   color: antiquewhite;
+}
+
+.item h3{
+  color: aliceblue;
 }
 
 .break {
