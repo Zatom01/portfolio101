@@ -54,7 +54,7 @@ img {
 }
 
 .tools__container{
-  background-color: rgba(248, 7, 112, 0.672);
+  background-color: rgba(201, 6, 91, 0.672);
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -78,4 +78,11 @@ img {
 .break {
   flex-basis: 10%;
   height: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .tools__container{
+    z-index: -1;
+  }
+
 }
